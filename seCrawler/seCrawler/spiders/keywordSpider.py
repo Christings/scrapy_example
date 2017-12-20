@@ -35,8 +35,10 @@ class keywordSpider(Spider):
             # yield {'url':url}  不使用item，直接存储到txt文件中。
             item['url'] = url
             yield item
-        # for title in Selector(response).xpath(self.title).extract():
-        #     print("title:", title)
+        for title in Selector(response).xpath(self.title).extract():
+            item['title'] = title
+            yield item
         for abstract in Selector(response).xpath(self.abstract).extract():
-            print("abstract:", abstract)
+            item['abstract'] = abstract
+            yield item
         pass
