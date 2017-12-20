@@ -12,3 +12,18 @@ SearchEngineResultSelectors= {
     'bing':'//h2/a/@href',
     'baidu':'//h3/a/@href',
 }
+SearchEngineTitleSelectors= {
+    'google': '//h3/a//text()',
+    'bing':'//h2/a//text()',
+    'baidu':'//h3/a//text()',
+}
+SearchEngineTimeSelectors= {
+    'google': '',
+    'bing':'',
+    'baidu':'//div[@id="content_left"]/div[@class="c-abstract"]/span/text()',
+}
+SearchEngineAbstractSelectors= {
+    'google': '//h3/a/@href',
+    'bing':'//h2/a/@href',
+    'baidu':'//div[@id="content_left"]/div/div[@class="c-abstract"]//text()',
+}
