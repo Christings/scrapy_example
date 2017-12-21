@@ -1,6 +1,9 @@
 # seCrawler(Search Engine Crawler)
 A scrapy project can crawl search result of Google/Bing/Baidu
 
+## refer
+copying by https://github.com/xtt129/seCrawler and rewrite,adding title and abstract.
+
 ## prerequisite
 python 3.5 and scrapy is needed.
 
@@ -20,7 +23,7 @@ run one command to get 50 pages result from search engine with keyword, the resu
 ```scrapy crawl keywordSpider -a keyword=Spider-Man -a se=google -a pages=50```
 
 ## results
-url,title and abstract will be stored in the urls.text
+url,title and abstract will be stored in the urls.txt
 ## limitation
 The project doesn't provide any workaround to the anti-spider measure like CAPTCHA, IP ban list, etc. 
 
