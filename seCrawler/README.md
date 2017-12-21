@@ -20,7 +20,7 @@ run one command to get 50 pages result from search engine with keyword, the resu
 ```scrapy crawl keywordSpider -a keyword=Spider-Man -a se=google -a pages=50```
 
 ## results
-url,title and abstract will be stored in urls.text
+url,title and abstract will be stored in the urls.text
 ## limitation
 The project doesn't provide any workaround to the anti-spider measure like CAPTCHA, IP ban list, etc. 
 

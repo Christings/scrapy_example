@@ -7,10 +7,15 @@ SearchEngines = {
 }
 
 
+# SearchEngineResultSelectors= {
+#     'google': '//h3/a/@href',
+#     'bing':'//h2/a/@href',
+#     'baidu':'//h3/a/@href',
+# }
 SearchEngineResultSelectors= {
-    'google': '//h3/a/@href',
-    'bing':'//h2/a/@href',
-    'baidu':'//h3/a/@href',
+    'google': '//div[@class="srg"]/div',
+    'bing':'//div[@id="b_content"]/ol[@id="b_results"]/li',
+    'baidu':'//div[@id="content_left"]/div',
 }
 SearchEngineTitleSelectors= {
     'google': '//h3/a//text()',
