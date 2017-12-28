@@ -82,6 +82,7 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11",
     "Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10"
 ]
+
 HTTP_PROXY ='http://127.0.0.1:8118'
 #使用scrapy_redis的调度器
 SCHEDULER = "yunqiCrawl.scrapy_redis.scheduler.Scheduler"
@@ -131,7 +132,7 @@ ITEM_PIPELINES = {
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 # NOTE: AutoThrottle will honour the standard settings for concurrency and delay
-AUTOTHROTTLE_ENABLED=True
+AUTOTHROTTLE_ENABLED=True  # 自动限速
 # The initial download delay
 AUTOTHROTTLE_START_DELAY=5
 # The maximum download delay to be set in case of high latencies
