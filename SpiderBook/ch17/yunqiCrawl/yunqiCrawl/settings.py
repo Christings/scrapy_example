@@ -114,7 +114,7 @@ DOWNLOADER_MIDDLEWARES = {
     # 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware':None,
     # 'yunqiCrawl.middlewares.RandomProxy.RandomProxy': 700,
 }
-MONGO_URI = 'mongodb://127.0.0.1:27017,127.0.0.1:27018,127.0.0.1:27019'
+MONGO_URI = 'mongodb://127.0.0.1:27021,127.0.0.1:27022,127.0.0.1:27023'
 MONGO_DATABASE='yunqi'
 REPLICASET = 'repset'
 # Enable or disable extensions

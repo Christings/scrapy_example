@@ -6,7 +6,7 @@
 #### 起始地址：http://yunqi.qq.com/bk/so2/n30p1
 #### 主要技术: 
     分布式爬虫（redis）；
-    伪造随机User-Agent、自动限速、禁用Cookie；
+    伪造随机User-Agent、自动限速(autothrottle)、禁用Cookie；
     去重优化；
 <br>
 欢迎大家支持我的公众号：

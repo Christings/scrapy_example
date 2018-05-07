@@ -1,0 +1,18 @@
+2017-12-27 08:40:20 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: seCrawler)
+2017-12-27 08:40:20 [scrapy.utils.log] INFO: Overridden settings: {'DEPTH_LIMIT': 1, 'CONCURRENT_REQUESTS_PER_IP': 1, 'SPIDER_MODULES': ['seCrawler.spiders'], 'NEWSPIDER_MODULE': 'seCrawler.spiders', 'BOT_NAME': 'seCrawler', 'DOWNLOAD_TIMEOUT': 100, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36', 'LOG_FILE': 'logs\\seCrawler\\keywordSpider\\813cb062ea9e11e7bde5c07cd1f63531.log', 'DOWNLOAD_DELAY': 0.5}
+2017-12-27 08:40:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats']
+2017-12-27 08:40:20 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-12-27 08:40:20 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "d:\users\pc\anaconda3\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "d:\users\pc\anaconda3\lib\site-packages\scrapy\crawler.py", line 76, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "d:\users\pc\anaconda3\lib\site-packages\scrapy\crawler.py", line 99, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "d:\users\pc\anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'keyword'
